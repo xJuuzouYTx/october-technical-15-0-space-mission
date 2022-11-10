@@ -21,6 +21,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
+    'license': 'LGPL-3',
 
     # always loaded
     'data': [
