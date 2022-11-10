@@ -1,11 +1,11 @@
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class space-mission(models.Model):
-#     _name = 'space-mission.space-mission'
-#     _description = 'space-mission.space-mission'
+class Ship(models.Model):
+     _name = 'odoo_academy.ship'
+     _description = 'Nave espacial'
 
 #     name = fields.Char()
 #     value = fields.Integer()
