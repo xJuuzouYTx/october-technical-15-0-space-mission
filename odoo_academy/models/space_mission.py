@@ -8,8 +8,10 @@ class Ship(models.Model):
     _description = 'Nave espacial'
     
     dimensiones = fields.Integer(string='Dimensiones del barco')
-    tipo_combustible = fields.Selection(string='Tipo de combustible',selection=[('gasolina','Gasolina')]
-    tipo_barco = fields.Selection(string='Tipo de barco',selection=[('barco','Barco'),('nave','Nave'),('auto','Automovil')])
+    tipo_combustible = fields.Selection(string='Tipo de combustible',
+                                        selection=[('gasolina','Gasolina')]
+    tipo_barco = fields.Selection(string='Tipo de barco',
+                                  selection=[('barco','Barco'),('nave','Nave'),('auto','Automovil')])
     num_pasajeros = fields.Integer(string='Número de pasajeros')
     active = fields.Boolean(string='Active', default=True)
     
