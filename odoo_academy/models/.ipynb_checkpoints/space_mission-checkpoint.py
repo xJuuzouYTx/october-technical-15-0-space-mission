@@ -4,15 +4,14 @@ from odoo import models, fields, api
 
 
 class Ship(models.Model):
-     _name = 'odoo_academy.ship'
-     _description = 'Nave espacial'
+    _name = 'odoo_academy.ship'
+    _description = 'Nave espacial'
     
     dimensiones = fields.Integer(string='Dimensiones del barco')
-    tipo_combustible = fields.Selection(string='Tipo de combustible',selection=[('gasolina','Gasolina')
-                                                                           ('iones','Iones')])
+    tipo_combustible = fields.Selection(string='Tipo de combustible',selection=[('gasolina','Gasolina')]
     tipo_barco = fields.Selection(string='Tipo de barco', selection=[('barco','Barco'),
-                                                        ('nave','Nave'),
-                                                       ('auto','Automovil')])
+                                                                     ('nave','Nave'),
+                                                                     ('auto','Automovil')])
     num_pasajeros = fields.Integer(string='Número de pasajeros')
     active = fields.Boolean(string='Active', default=True)
     
