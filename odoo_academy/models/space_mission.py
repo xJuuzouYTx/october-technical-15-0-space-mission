@@ -9,7 +9,7 @@ class Ship(models.Model):
     
     dimensiones = fields.Integer(string='Dimensiones del barco')
     tipo_combustible = fields.Selection(string='Tipo de combustible',
-                                        selection=[('gasolina','Gasolina')]
+                                        selection=[('gasolina','Gasolina')])
     tipo_barco = fields.Selection(string='Tipo de barco',
                                   selection=[('barco','Barco'),('nave','Nave'),('auto','Automovil')])
     num_pasajeros = fields.Integer(string='Número de pasajeros')
