@@ -1,5 +1,4 @@
 #-*- coding: utf-8 -*-
-
 from odoo import models, fields, api
 
 
@@ -11,7 +10,7 @@ class Book(models.Model):
     genero = fields.Selection(string="Genero", selection=[('terror', 'Terror'),
                                                          ('drama', 'Drama'),
                                                          ('fantasia', 'Fantasia')])
-#     editorial = fields.Many2one('odoo_academy.editorial', string='editorial')
+    editorial = fields.Many2one('odoo_academy.editorial', string='editorial')
     ano_edicion = fields.Integer(string="Año de edición")
     isbn = fields.Char(string="ISBN")
     
